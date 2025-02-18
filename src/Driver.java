@@ -17,20 +17,25 @@ public class Driver
 
     public String getId()
     {
-        return id;}
+        return id;
+    }
     public int getX()
     {
-        return xCoordinate;}
+        return xCoordinate;
+    }
     public int getY()
-    { return yCoordinate;
+    {
+        return yCoordinate;
     }
     public boolean isAvailable()
-    { return isAvailable;
+    {
+        return isAvailable;
     }
 
     public void setAvailability(boolean available)
     {
-        this.isAvailable = available; }
+        this.isAvailable = available;
+    }
     public void updateLocation(int x, int y)
     {
         this.xCoordinate = x; this.yCoordinate = y; }

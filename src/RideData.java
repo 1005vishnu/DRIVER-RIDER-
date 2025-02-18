@@ -11,6 +11,16 @@ public class RideData {
         return instance;
     }
 
-    public void addRide(Ride ride) { rides.put(ride.getRideId(), ride); }
-    public Ride getRideById(String rideId) { return rides.get(rideId); }
+    public void addRide(Ride ride) {
+        rides.put(ride.getRideId(), ride);
+    }
+
+    public Ride getRideById(String rideId) {
+        return rides.get(rideId);
+    }
+
+
+    public Map<String, Ride> getAllRides() {
+        return rides;
+    }
 }
