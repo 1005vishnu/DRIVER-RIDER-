@@ -12,7 +12,7 @@ public class StopNonExistentRideTest {
 
     @Test
     void testStoppingNonExistentRideFails() {
-        String result = rideManager.stopRide("RIDE-999", 5, 5, 30); // ❌ Ride does not exist
+        String result = rideManager.stopRide("RIDE-999", 5, 5, 30); 
         assertEquals("INVALID_RIDE", result, "Stopping a non-existent ride should fail");
     }
 }
