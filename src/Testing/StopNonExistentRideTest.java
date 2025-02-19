@@ -1,4 +1,8 @@
+package Testing;
+
 import static org.junit.jupiter.api.Assertions.*;
+
+import Services.RideManager;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +16,7 @@ public class StopNonExistentRideTest {
 
     @Test
     void testStoppingNonExistentRideFails() {
-        String result = rideManager.stopRide("RIDE-999", 5, 5, 30); // ❌ Ride does not exist
+        String result = rideManager.stopRide("RIDE-999", 5, 5, 30); // ❌ Models.Ride does not exist
         assertEquals("INVALID_RIDE", result, "Stopping a non-existent ride should fail");
     }
 }

@@ -1,4 +1,12 @@
+package Testing;
+
 import static org.junit.jupiter.api.Assertions.*;
+
+import Models.Driver;
+import Models.Rider;
+import Repository.DriverData;
+import Services.DriverManager;
+import Services.RideManager;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -21,7 +29,7 @@ public class RiderNotAvailableTest {
 
     @Test
     void testBookingFailsWhenRiderNotAvailable() {
-        Rider rider = null; // ❌ Rider is null in this case
+        Rider rider = null; // ❌ Models.Rider is null in this case
         Driver driver = driverData.getDriverById("D1");
 
         String result = rideManager.startRide("RIDE-001", rider, driver);

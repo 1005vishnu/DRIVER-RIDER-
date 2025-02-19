@@ -1,3 +1,7 @@
+package Repository;
+
+import Models.Driver;
+
 import java.util.*;
 
 public class DriverData {
@@ -13,7 +17,7 @@ public class DriverData {
 
     public void addDriver(Driver driver) {
         drivers.put(driver.getId(), driver);
-        System.out.println("Added Driver: " + driver.getId()); // ✅ Debugging Print
+        System.out.println("Added Models.Driver: " + driver.getId()); // ✅ Debugging Print
     }
 
     public List<Driver> getAllDrivers() {
@@ -22,7 +26,7 @@ public class DriverData {
 
     // ✅ Fix: Add method to get driver by ID
     public Driver getDriverById(String id) {
-        System.out.println("Fetching Driver: " + id); // ✅ Debugging Print
+        System.out.println("Fetching Models.Driver: " + id); // ✅ Debugging Print
         return drivers.get(id);
     }
 }

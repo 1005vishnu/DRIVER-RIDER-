@@ -1,3 +1,12 @@
+import Controllers.RiderManager;
+import Models.Driver;
+import Models.Ride;
+import Models.Rider;
+import Repository.RideData;
+import Services.BillingCalculator;
+import Services.DriverManager;
+import Services.RideManager;
+
 import java.util.*;
 
 public class Main {
@@ -11,7 +20,7 @@ public class Main {
             String[] input = sc.nextLine().split(" ");
             switch (input[0]) {
                 case "ADD_DRIVER" -> driverManager.addDriver(input[1], Integer.parseInt(input[2]), Integer.parseInt(input[3]));
-                case "ADD_RIDER" -> System.out.println("Rider Added");
+                case "ADD_RIDER" -> System.out.println("Models.Rider Added");
                 case "MATCH" -> System.out.println("Matching Logic");
                 case "START_RIDE" -> System.out.println(rideManager.startRide(input[1], new Rider(input[3], 0, 0), new Driver(input[2], 0, 0)));
                 case "STOP_RIDE" -> System.out.println(rideManager.stopRide(input[1], Integer.parseInt(input[2]), Integer.parseInt(input[3]), Integer.parseInt(input[4])));

@@ -1,3 +1,4 @@
+package Models;
 
 public class Rider {
     private String id;

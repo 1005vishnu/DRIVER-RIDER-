@@ -1,3 +1,10 @@
+package Services;
+
+import Models.Driver;
+import Models.Ride;
+import Models.Rider;
+import Repository.RideData;
+
 public class RideManager {
     private RideData rideData = RideData.getInstance();
 

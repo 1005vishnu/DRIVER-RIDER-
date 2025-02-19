@@ -1,3 +1,7 @@
+package Repository;
+
+import Models.Ride;
+
 import java.util.*;
 
 public class RideData {

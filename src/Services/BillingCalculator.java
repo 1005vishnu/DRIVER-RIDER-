@@ -1,3 +1,7 @@
+package Services;
+
+import Models.Ride;
+
 public class BillingCalculator
 {
     public static double calculateBill(Ride ride)
